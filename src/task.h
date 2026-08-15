@@ -20,6 +20,8 @@ enum class Status
 };
 class Task
 {
+    friend class TaskManager;
+
     int task_id;
     std::string task_title;
     std::string task_description;
